@@ -17,6 +17,7 @@ spec:
       containers:
       - name: api-service
         image: simondum/api-service:1.0
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
         readinessProbe:

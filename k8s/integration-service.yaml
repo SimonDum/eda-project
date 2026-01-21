@@ -17,6 +17,7 @@ spec:
       containers:
       - name: integration-service
         image: simondum/integration-service:1.0
+        imagePullPolicy: Always
         env:
         - name: KAFKA_BROKER
           value: "kafka-service:9092"
