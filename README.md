@@ -5,7 +5,7 @@
 Ce projet implémente une **Architecture Orientée Événements (EDA)** pour la gestion d'étudiants via un déploiement **Kubernetes (minikube)**. Cela a été réalisé dans un but purement pédagogique et dans le cadre du module d'Architecture Orientée Service en formation FISE ICY 5A à l'INSA Hauts-de-France.
 
 > [!NOTE]
-> Les réponses aux questions d'introduction à Kubernetes ainsi que des remarques approfondies et des captures d'écran sont fournies dans le rapport PDF.
+> Les réponses aux questions d'introduction à Kubernetes ainsi que des remarques approfondies et des captures d'écran sont fournies dans le [rapport PDF](TP%20Kubernetes%20EDA%20-%20Simon%20Dumoulin.pdf).
 
 ---
 
