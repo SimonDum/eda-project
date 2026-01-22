@@ -77,6 +77,7 @@ minikube start
 ## Suppression de l'architecture
 > [!NOTE]
 > Assurez vous que le script a les droits d'exécution.
+
 > [!WARNING]
 > Le script supprime non seulement les ressources Kubernetes déployées (Services, Deployments, StatefulSets), mais également les volumes de données persistants (PVC).
 ```bash
