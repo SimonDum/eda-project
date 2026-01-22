@@ -1,5 +1,7 @@
 # Projet EDA & Kubernetes
 
+**Auteur : Simon Dumoulin**
+
 Ce projet implémente une **Architecture Orientée Événements (EDA)** pour la gestion d'étudiants via un déploiement **Kubernetes (minikube)**. Cela a été réalisé dans un but purement pédagogique et dans le cadre du module d'Architecture Orientée Service en formation FISE ICY 5A à l'INSA Hauts-de-France.
 
 > [!NOTE]
@@ -40,6 +42,7 @@ Le projet est organisé de la manière suivante :
 * [front-service/](front-service) : Code source Node.js et Interface Web. Contient le [Dockerfile](front-service/Dockerfile) associé.
 * [k8s/](k8s) : Contient tous les manifestes Kubernetes (`.yaml`) pour le déploiement.
 * [deploy.sh](deploy.sh) : Script principal pour automatiser le déploiement sur le cluster.
+* [cleanup.sh](cleanup.sh) : Script pour supprimer l'architecture et nettoyer les données.
 * [build_and_push.sh](build_and_push.sh) : Script utilitaire ayant servi à la construction et au push des images sur DockerHub.
 
 ---
@@ -63,6 +66,19 @@ Lancez Minikube :
 minikube start
 ```
 ### 2. Exécuter le script de déploiement
+> [!NOTE]
+> Assurez vous que le script a les droits d'exécution.
 ```bash
 ./deploy.sh
+```
+
+---
+
+## Suppression de l'architecture
+> [!NOTE]
+> Assurez vous que le script a les droits d'exécution.
+> [!WARNING]
+> Le script supprime non seulement les ressources Kubernetes déployées (Services, Deployments, StatefulSets), mais également les volumes de données persistants (PVC).
+```bash
+./cleanup.sh
 ```
